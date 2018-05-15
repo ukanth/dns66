@@ -1,5 +1,6 @@
 package org.jak_linux.dns66;
 
+import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.net.VpnService;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 import org.jak_linux.dns66.vpn.AdVpnService;
 import org.jak_linux.dns66.vpn.Command;
 
-public class TaskerVpnActivity extends AppCompatActivity {
+public class TaskerVpnActivity extends Activity {
     public static final int REQUEST_START_VPN = 1;
     Configuration config;
 
@@ -45,6 +46,7 @@ public class TaskerVpnActivity extends AppCompatActivity {
                 }
             }
         }
+        finish();
     }
 
     @Override
