@@ -76,7 +76,7 @@
         <activity
             android:name=".TaskerVpnActivity"
             android:parentActivityName=".TaskerVpnActivity"
-            android:theme="@android:style/Theme.NoDisplay" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name=".tasker.FireReceiver"
